@@ -1,0 +1,61 @@
+/* Certification Section */
+.certifications-container {
+  padding: 24px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 100%;
+  max-height: 500px; /* Fixed height */
+  overflow-y: auto; /* Scroll vertically when content exceeds */
+  box-sizing: border-box; /* Include padding and border in height */
+}
+
+.certifications-title {
+  font-size: 24px;
+    color: #343a40;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.certification-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two cards per row */
+  gap: 16px; /* Maintain spacing between cards */
+}
+
+.certification-card {
+  width: 100%; /* Ensure cards fit their grid cells */
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certification-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 5px;
+  margin-bottom: 8px;
+}
+
+.certification-card p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.certification-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.certification-link:hover {
+  text-decoration: underline;
+}
