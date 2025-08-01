@@ -1,0 +1,77 @@
+.achievements-container {
+    padding: 24px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 100%;
+    max-height: 500px; /* Fixed height for container */
+    overflow-y: auto; /* Enable scrolling for overflow */
+    box-sizing: border-box;
+  }
+  
+  .achievements-title {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  .achievement-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 16px; /* Space between cards */
+  }
+  
+  .achievement-card {
+    width: 100%;
+    /* height: 240px; Fixed height for cards */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .achievement-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .achievement-card h4 {
+    font-size: 18px; /* Ensure title is visible */
+    font-weight: bold;
+    margin: 0 0 8px;
+    color: #343a40;
+    white-space: nowrap; /* Prevent wrapping of long titles */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis for long titles */
+  }
+  
+  .achievement-card p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 4px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 2; Show 3 lines of text */
+    -webkit-box-orient: vertical;
+  }
+  
+  .achievement-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto; /* Push the link to the bottom */
+  }
+  
+  .achievement-link:hover {
+    text-decoration: underline;
+  }
+  

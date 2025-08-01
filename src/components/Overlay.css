@@ -1,0 +1,151 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(2px); /* Blur effect for the background */
+  z-index: 999; /* Ensure it's above the rest of the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dialog Box */
+.overlay-wrapper {
+  width: 720px;
+  height: 480px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above the modal overlay */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  position: relative; /* For any internal positioning */
+}
+
+/* Title Bar */
+.title-bar {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  flex-grow: 1;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Description Box */
+.description {
+  flex: 2;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 120px; /* Space for the image */
+}
+
+.description h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Image Box */
+.image-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tech Info Box */
+.tech-info {
+  flex: 1;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-info h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.tech-info ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+  color: #555;
+}
+
+/* Extra Info Section */
+.extra-info {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Close Button */
+.close-button {
+  margin-top: 10px;
+  align-self: flex-end;
+  padding: 5px 10px;
+  background-color: #f04e30;
+  color: rgb(183, 177, 177);
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.close-button:hover {
+  background-color: #c03e25;
+}
