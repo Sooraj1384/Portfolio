@@ -9,7 +9,7 @@ pipeline {
     stage('SonarQube Analysis') {
       steps {
         withSonarQubeEnv('portfolio_app') {
-          bat 'sonar-scanner -Dsonar.projectKey=sooraj1384_portfolio-app -Dsonar.organization=YOUR_ORG_KEY -Dsonar.sources=src -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=YOUR_TOKEN'
+          bat 'sonar-scanner -Dsonar.projectKey=sooraj1384_portfolio-app -Dsonar.organization=sooraj1384 -Dsonar.sources=src -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=ebec83989e359e8937d281f92dd3a7ed224b4768'
         }
       }
     }
